@@ -1,0 +1,374 @@
+body 
+{	
+	display: flex;
+	height: auto;
+	background-repeat:no-repeat;
+	font-family:"Arial";
+	font-size: 18px;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+     user-select: none; 
+     /*overflow:hidden;*/
+
+    height: 100% !important;
+
+    margin: 0;
+}
+
+html
+{
+	height: 100% !important;
+}
+
+#load
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:200px;
+	height:200px;
+	/*background: url('../../../../assets/loader1.gif') no-repeat 0px 0px;*/
+	
+}
+
+@font-face {
+    font-family: "brant";
+    src: url("../assets/fonts/brant.ttf") format("truetype");
+}
+
+#eventList::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+#eventList::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: rgba(100, 100, 100, .4);
+/*  box-shadow: 0 0 5px rgba(255, 255, 255, .5);*/
+}
+
+ #container
+{ 
+	position: relative;
+	width: 100%;
+	height: auto;
+/*	max-width: 800px;
+	max-height: 600px;*/
+	min-height: 100% !important;
+	/*min-height: 600px;*/
+	overflow:auto;
+	-webkit-transform:scale(1);
+	-webkit-transform-origin : left top;
+	-moz-transform :scale(1);
+	-moz-transform-origin : left top;
+	-ms-transform :scale(1);
+	-ms-transform-origin : left top;
+	-o-transform :scale(1);
+	-o-transform-origin : left top;
+	transform :scale(1);
+	transform-origin : left top;
+	float: left;
+
+	/*background: linear-gradient(to bottom left, #7a0000 0%, #d41c20 100%);*/
+/*	background: url("../assets/background.svg");*/
+/*	background: yellow;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	display: flex;
+	justify-content: center;
+
+	font-family: "Times New Roman";
+}
+
+#mainDiv
+{
+/*	display: flex;*/
+	flex-direction: column;
+	position: relative;
+	min-height: 100% !important;
+	height: auto;
+	width: 100%;
+	/*margin-top: 4%;*/
+/*	margin-top: 6vh;*/
+
+/*	background: blue;*/
+	overflow-y: auto;
+}
+
+#mainTopBar
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 55px;
+	z-index: 1;
+/*	background: black;*/
+	display: flex;
+}
+
+#logoNname
+{
+	position: relative;
+	height: 100%;
+	width: 25%;
+	background: yellow;
+	margin-top: auto;
+	margin-bottom: auto;
+	background: url("../assets/logo2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	cursor: pointer;
+}
+
+#MenuArea
+{
+	position: relative;
+	height: 100%;
+	width: 75%;
+/*	background: black;*/
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 5%;
+	margin-right: 1%;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.menuOptions
+{
+	position: relative;
+	height: 80%;
+	width: max-content;
+	min-width: max-content;
+/*	border: 1px solid white;*/
+	align-content: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	padding: 0.5%;
+	line-height: 40px;
+/*	border-radius: 5px;*/
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.menuOptions:hover
+{
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.4);
+	color: black;
+}
+
+.mainScreens
+{
+	position: relative;
+	display: flex;
+/*	height: 100%;*/
+	width: 100%;
+	height: 110%;
+	min-width: 100%;
+/*	background-size: cover;*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+
+#screen_1
+{
+	background: url("../assets/renaissance.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+}
+
+.screen_1_subParts
+{
+	position: relative;
+	height: 100%;
+}
+
+#screen_1_1
+{
+/*	background:blue;*/
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 47%;
+}
+
+#screen_1_1_Text
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	height:	max-content;
+	width: 90%;
+	justify-content: space-around;
+}
+
+.TitleText
+{
+	color: white;
+}
+
+#Text1
+{
+	font-size: 50px;
+}
+
+#Text2
+{
+	font-size: 20px;
+}
+
+#Text3
+{
+	font-size: 20px;
+	line-height: 5;
+}
+
+#screen_1_2
+{
+/*	background:red;*/
+	display: flex;
+	width: 53%;
+	justify-content: space-around;
+}
+
+#eventsMainDiv
+{
+	position: relative;
+	height: 650px;
+	max-height: 650px;
+	width: 650px;
+	margin: auto;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	
+	background: url("../assets/frame.png");
+	background-color: rgba(0,0,0,0.5);
+	background-size: contain;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#eventsMainDivHeading
+{
+	position: relative;
+	height: 10%;
+	width: 100%;
+	font-size: 25px;
+	display: flex;
+	padding: auto;
+	justify-content: center;
+/*	color: #7a6900;*/
+	color: darkgoldenrod;
+	align-items: center;
+	margin-top: 10px;
+
+	font-family: brant;
+}
+
+#eventList
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	max-height: 80%;
+	width: 100%;
+/*	flex-wrap: wrap;*/
+	overflow-y: scroll;
+/*	justify-content: center;*/
+	align-items: center;
+
+	cursor: all-scroll;
+	overflow: scroll;
+}
+
+.events
+{
+	position: relative;
+	height: auto;
+/*	min-height: 100px;*/
+	margin-top: 37px;
+	width: 80%;
+/*	border-bottom: 1px solid white;*/
+/*	background: blue;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*	color: #dbd7d7;*/
+	color: #e0d9c1;
+	font-size: 19px;
+
+	font-family: brant;
+}
+
+
+#screen_2
+{
+	position: relative;
+	background: url("../assets/Piano.jpeg");	
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	font-size: 19px;
+}
+
+.screen_2_headings
+{
+	position: relative;
+	height: 100px;
+	width: auto;
+/*	border-bottom: 1px solid darkgoldenrod;*/
+	display: flex;
+	vertical-align: middle;
+	justify-content: center;
+}
+
+.screen_2_contentDivs
+{
+	padding: 0% 2% 0% 2%; 
+}
+
+.screen_2_sub
+{
+	position: relative;
+	top: 260px;
+/*	margin-top: 2vh;*/
+	padding: 0% 2% 0% 2%; 
+	position: relative;
+	color: darkgoldenrod;	
+}
+
+#screen_2_heading2
+{
+/*	margin-top: 200px;*/
+	font-size: 30px;
+}
+
+#screen_2_content2Div
+{
+	top: 350px;
+}
+
+#screen_3
+{
+	background: url("../assets/minimal.jpeg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
