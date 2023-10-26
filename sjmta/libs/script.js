@@ -12,7 +12,7 @@ function questionInteractive()
 
 	this.menuList = [" ", "About Us", "Our Programs", "Calender of Events", "Juried Piano Recital Auditions", "Contact Us", "Directions"];
 
-	this.upcomingEvents = { 1:"Fall Festival: 11/5/23 Rowan University Wilson Center. Deadline is Oct 20, 2023.",
+	this.upcomingEvents = { 1:"Fall Festival: 11/5/24 Rowan University Wilson Center. Deadline is Oct 20, 2024.",
 							2:"Technique Competition: 1/21/24 Y.A.L.E. Performance Arts Center 11 Connecticut Ave, Cherry Hill, NJ 08034. Deadline Jan 6, 2024.",
 						  	3:"Masterclass application deadline is Jan 12, 2024.",
 						  	4:"Masterclass Auditions (if required): 1/28/24 Cunningham Piano.",
