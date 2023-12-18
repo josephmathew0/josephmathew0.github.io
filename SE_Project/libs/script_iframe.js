@@ -49,7 +49,9 @@ questionInteractive_iframe.prototype.createIframe = function()
 
 	var AmountPerServing = parseInt(interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["valueServingWeightGrams"]);
 	var valueCalories = parseInt(interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["valueCalories"]);
+	this.newCalorie = valueCalories + 20;
 	var valueTotalFat =parseInt(interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["valueTotalFat"]);
+	this.newFat = valueTotalFat + 20;
 	var valueSatFat = parseInt(interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["valueSatFat"]);
 	var valueTransFat = parseInt(interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["valueTransFat"]);
 	var valueCholesterol = parseInt(interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["valueCholesterol"]);
@@ -89,7 +91,7 @@ questionInteractive_iframe.prototype.createIframe = function()
   					'<label for="Veggies">Extra Veggies</label><br>'+
   					'<input type="checkbox" id="Meat" name="Meat" value="Meat">'+
   					'<label for="Meat"> Meat</label><br><br>'+
-  					'<input type="submit" value="Submit">'+
+  					'<div id="submit" onclick="interactiveObj1.addvalues()">Submit</div>'+
 					'</form>';
 		htmlContent += '</div>';
 	}	
@@ -101,11 +103,11 @@ questionInteractive_iframe.prototype.createIframe = function()
 	htmlContent += '<div class="drawLine" style="height:15px"></div>';
 	htmlContent += '<div class="caloryCalculatorContentElements">Amount Per Serving: '+AmountPerServing+'(oz for drinks)</div>';
 	htmlContent += '<div class="drawLine" style="height:2px"></div>';
-	htmlContent += '<div class="caloryCalculatorContentElements">Calories: '+valueCalories+'</div>';
+	htmlContent += '<div  id="totalCalories" class="caloryCalculatorContentElements">Calories: '+valueCalories+'</div>';
 	htmlContent += '<div class="drawLine" style="height:7px"></div>';
 	htmlContent += '<div class="caloryCalculatorContentElements">%Daily Values</div>';
 	htmlContent += '<div class="drawLine" style="height:2px"></div>';
-	htmlContent += '<div class="caloryCalculatorContentElements">Total Fat: '+valueTotalFat+'g</div>';
+	htmlContent += '<div id-"totalFat" class="caloryCalculatorContentElements">Total Fat: '+valueTotalFat+'g</div>';
 	htmlContent += '<div class="drawLine" style="height:2px; width:80%;"></div>';
 	htmlContent += '<div class="caloryCalculatorContentSubElements">Saturated Fat: '+valueSatFat+'g</div>';
 	htmlContent += '<div class="drawLine" style="height:2px; width:80%;"></div>';
@@ -165,6 +167,24 @@ questionInteractive_iframe.prototype.createIframe = function()
 
 
 	interactiveObj1.moveToPage(parseInt(interactiveObj1.indexOfQuestion));	//update navigation bar on top
+}
+
+questionInteractive_iframe.prototype.addvalues = function()
+{
+	console.log("Here");
+
+	if(document.getElementById('cheese').checked) {
+    $("#totalCalories").html("Calories: "+interactiveObj1.newCalorie);
+	$("#totalFat").html("Total Fat: "+interactiveObj1.newFat);
+	} 
+	if(document.getElementById('Veggies').checked) {
+    $("#totalCalories").html("Calories: "+interactiveObj1.newCalorie);
+	$("#totalFat").html("Total Fat: "+interactiveObj1.newFat);
+	} 
+	if(document.getElementById('Meat').checked) {
+    $("#totalCalories").html("Calories: "+interactiveObj1.newCalorie);
+	$("#totalFat").html("Total Fat: "+interactiveObj1.newFat);
+	} 
 }
 
 questionInteractive_iframe.prototype.movePageLinks = function(pMove)
