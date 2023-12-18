@@ -87,7 +87,7 @@ function questionInteractive()
 					"QuestionLink": {"name": "Black Forest Ham on Tomato Basil Wrap               ", "valueServingWeightGrams": 307, "valueCalories": 440, "valueTotalFat": 12, "valueSatFat": 5, "valueTransFat": 0, "valueCholesterol": 55, "valueSodium": 1720, "valueTotalCarb": 57, "valueFibers": 4.0, "valueSugars": 6, "valueProteins": 29, "valueVitaminA": 30, "valueVitaminC": 25, "valueCalcium": 10, "valueIron": 25, "Category": "SANDWICHES", "Subcategory": "Make any Sandwich into a Wrap"}
 				},
 				"Link3": {
-					"QuestionImage": "BuffaloChickenWrap.jpeg",
+					"QuestionImage": "buffaloChickenWrap.jpeg",
 					"QuestionText": "Buffalo Chicken Wrap (with Grilled Chicken) on Tomato Basil Wrap",
 					"QuestionLink": {"name": "Buffalo Chicken Wrap (with Grilled Chicken) on Tomato Basil Wrap               ", "valueServingWeightGrams": 356, "valueCalories": 550, "valueTotalFat": 20, "valueSatFat": 6, "valueTransFat": 0, "valueCholesterol": 110, "valueSodium": 1950, "valueTotalCarb": 55, "valueFibers": 4.0, "valueSugars": 6, "valueProteins": 42, "valueVitaminA": 30, "valueVitaminC": 25, "valueCalcium": 10, "valueIron": 25, "Category": "SANDWICHES", "Subcategory": "Make any Sandwich into a Wrap"}
 				},
