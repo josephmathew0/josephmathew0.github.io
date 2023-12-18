@@ -49,9 +49,9 @@ questionInteractive_iframe.prototype.createIframe = function()
 
 	var AmountPerServing = parseInt(interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["valueServingWeightGrams"]);
 	var valueCalories = parseInt(interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["valueCalories"]);
-	this.newCalorie = valueCalories + 20;
+	this.newCalorie = valueCalories;
 	var valueTotalFat =parseInt(interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["valueTotalFat"]);
-	this.newFat = valueTotalFat + 20;
+	this.newFat = valueTotalFat;
 	var valueSatFat = parseInt(interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["valueSatFat"]);
 	var valueTransFat = parseInt(interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["valueTransFat"]);
 	var valueCholesterol = parseInt(interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["valueCholesterol"]);
@@ -171,19 +171,23 @@ questionInteractive_iframe.prototype.createIframe = function()
 
 questionInteractive_iframe.prototype.addvalues = function()
 {
-	console.log("Here");
-
 	if(document.getElementById('cheese').checked) {
-    $("#totalCalories").html("Calories: "+interactiveObj1.newCalorie);
-	$("#totalFat").html("Total Fat: "+interactiveObj1.newFat);
+		interactiveObj1.newCalorie = interactiveObj1.newCalorie + 15;
+		interactiveObj1.newFat = interactiveObj1.newFat + 15;
+    	$("#totalCalories").html("Calories: "+interactiveObj1.newCalorie);
+		$("#totalFat").html("Total Fat: "+interactiveObj1.newFat);
 	} 
 	if(document.getElementById('Veggies').checked) {
-    $("#totalCalories").html("Calories: "+interactiveObj1.newCalorie);
-	$("#totalFat").html("Total Fat: "+interactiveObj1.newFat);
+		interactiveObj1.newCalorie = interactiveObj1.newCalorie + 15;
+		interactiveObj1.newFat = interactiveObj1.newFat + 15;
+    	$("#totalCalories").html("Calories: "+interactiveObj1.newCalorie);
+		$("#totalFat").html("Total Fat: "+interactiveObj1.newFat);
 	} 
 	if(document.getElementById('Meat').checked) {
-    $("#totalCalories").html("Calories: "+interactiveObj1.newCalorie);
-	$("#totalFat").html("Total Fat: "+interactiveObj1.newFat);
+		interactiveObj1.newCalorie = interactiveObj1.newCalorie + 15;
+		interactiveObj1.newFat = interactiveObj1.newFat + 15;
+    	$("#totalCalories").html("Calories: "+interactiveObj1.newCalorie);
+		$("#totalFat").html("Total Fat: "+interactiveObj1.newFat);
 	} 
 }
 
