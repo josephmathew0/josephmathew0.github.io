@@ -75,16 +75,31 @@ questionInteractive_iframe.prototype.createIframe = function()
 	}
 	htmlContent += '</div>';
 	htmlContent += '<div id="movePagesRight" class="movePages" onclick="interactiveObj1.movePageLinks(\''+"right"+'\')"> > </div>';
-	
 	htmlContent += '<div id="nextQuestionButton" class="navigationButtons">Next \></div>';
 	htmlContent += '</div>';
 	// htmlContent += '<iframe id="questionIframe" src="'+interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]+'" title="Question Link"></iframe>';
+	
+	if(this.subject == "Sandwiches" || this.subject == "Wraps")
+	{
+		htmlContent += '<div id="extrasMainDiv">';
+		htmlContent += '<form action="/action_page.php">'+
+  					'<input type="checkbox" id="cheese" name="cheese" value="cheese">'+
+  					'<label for="cheese"> Extra Cheese</label><br>'+
+  					'<input type="checkbox" id="Veggies" name="Veggies" value="Veggies">'+
+  					'<label for="Veggies">Extra Veggies</label><br>'+
+  					'<input type="checkbox" id="Meat" name="Meat" value="Meat">'+
+  					'<label for="Meat"> Meat</label><br><br>'+
+  					'<input type="submit" value="Submit">'+
+					'</form>';
+		htmlContent += '</div>';
+	}	
+
 	htmlContent += '<div id="caloryCalculatorMainDiv">';
 	htmlContent += '<div id="caloryCalculatorContentDiv">';
 	htmlContent += '<div class="caloryCalculatorContentElements" style="font-size:35px; font-weight: bold;">Nutrition Facts</div>';
 	htmlContent += '<div class="caloryCalculatorContentElements" style="font-size:22px;">'+interactiveObjTest.subjectsAndQuestionContent[interactiveObj1.subject]["subtopic"][interactiveObj1.subtopic]["Link"+(parseInt(interactiveObj1.indexOfQuestion))]["QuestionLink"]["name"]+'</div>';
 	htmlContent += '<div class="drawLine" style="height:15px"></div>';
-	htmlContent += '<div class="caloryCalculatorContentElements">Amount Per Serving: '+AmountPerServing+'</div>';
+	htmlContent += '<div class="caloryCalculatorContentElements">Amount Per Serving: '+AmountPerServing+'(oz for drinks)</div>';
 	htmlContent += '<div class="drawLine" style="height:2px"></div>';
 	htmlContent += '<div class="caloryCalculatorContentElements">Calories: '+valueCalories+'</div>';
 	htmlContent += '<div class="drawLine" style="height:7px"></div>';

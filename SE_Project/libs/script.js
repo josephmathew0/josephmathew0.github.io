@@ -19,7 +19,7 @@ function questionInteractive()
 		"icon": "sandwich.png",
 		"subtopic": {
 			"Non-Vegetarian": {
-				"ScriptDocLink":"https://mysubwayinfo.com/subway-bread-choices/",	//Link to the doc about the topic
+				"ScriptDocLink":"https://subwaymenus.info/subway-allergen-menu/",	//Link to the doc about the topic
 
 				"Link1": {
 					"QuestionImage": "blackForestHam.jpeg", //BFH
@@ -43,29 +43,29 @@ function questionInteractive()
 				},
 				"Link5": {
 					"QuestionImage": "ITALIAN_BMT.png", //ITALIAN_BMT
-					"QuestionText": "ITALIAN B.M.T.",
+					"QuestionText": "Italian BMT Sandwich.",
 					"QuestionLink": {"name": "Italian BMT\u00ae ", "valueServingWeightGrams": 213, "valueCalories": 360, "valueTotalFat": 16, "valueSatFat": 6, "valueTransFat": 0, "valueCholesterol": 50, "valueSodium": 1160, "valueTotalCarb": 39, "valueFibers": 2.0, "valueSugars": 4, "valueProteins": 19, "valueVitaminA": 15, "valueVitaminC": 30, "valueCalcium": 4, "valueIron": 15, "Category": "SANDWICHES", "Subcategory": "Sandwiches"},
 				},
 				"Link6": {
 					"QuestionImage": "MeatballMarinara.jpeg", //MeatballMarinara
 					"QuestionText": "Meatball Marinara",
 					"QuestionLink": {"name": "Meatball Marinara ", "valueServingWeightGrams": 205, "valueCalories": 400, "valueTotalFat": 17, "valueSatFat": 7, "valueTransFat": 1, "valueCholesterol": 40, "valueSodium": 1080, "valueTotalCarb": 46, "valueFibers": 3.0, "valueSugars": 6, "valueProteins": 20, "valueVitaminA": 10, "valueVitaminC": 15, "valueCalcium": 6, "valueIron": 20, "Category": "SANDWICHES", "Subcategory": "Sandwiches"},
-				}
+				},
+				"Link7": {
+					"QuestionImage": "blackForestham.jpeg", //BFH
+					"QuestionText": "Roast Beef",
+					"QuestionLink": {"name": "Roast beef ", "valueServingWeightGrams": 233, "valueCalories": 300, "valueTotalFat": 5, "valueSatFat": 2, "valueTransFat": 0, "valueCholesterol": 40, "valueSodium": 740, "valueTotalCarb": 41, "valueFibers": 4.0, "valueSugars": 7, "valueProteins": 22, "valueVitaminA": 30, "valueVitaminC": 15, "valueCalcium": 2, "valueIron": 20, "Category": "SANDWICHES", "Subcategory": "Sandwiches"},
+				},
 
 			},
 
 			"Vegetarian": {
-				"ScriptDocLink":"",	//Link to the doc about the topic
+				"ScriptDocLink":"https://subwaymenus.info/subway-allergen-menu/",	//Link to the doc about the topic
 
 				"Link1": {
-					"QuestionImage": "74216.png", 
+					"QuestionImage": "veggie_delight.jpeg", 
 					"QuestionText": "Veg loaded",
-					"QuestionLink": ""
-				},
-				"Link2": {
-					"QuestionImage": "6961.png",
-					"QuestionText": "Vegan",
-					"QuestionLink": ""
+					"QuestionLink": {"name": "Veggie Delite\u00ae ", "valueServingWeightGrams": 162, "valueCalories": 200, "valueTotalFat": 2, "valueSatFat": 0, "valueTransFat": 0, "valueCholesterol": 0, "valueSodium": 320, "valueTotalCarb": 39, "valueFibers": 4.0, "valueSugars": 5, "valueProteins": 8, "valueVitaminA": 30, "valueVitaminC": 15, "valueCalcium": 2, "valueIron": 10, "Category": "SANDWICHES", "Subcategory": "Sandwiches"}
 				}
 			}
 		}	
@@ -73,13 +73,38 @@ function questionInteractive()
 	"Wraps": {
 		"icon": "wraps.png",
 		"subtopic": {
-			"Reflection in curved surfaces": {
-				"ScriptDocLink":"",	//Link to the doc about the topic
+			"Non-Vegetarian": {
+				"ScriptDocLink":"https://subwaymenus.info/subway-allergen-menu/",	//Link to the doc about the topic
 
 				"Link1": {
-					"QuestionImage": "33125.png",
-					"QuestionText": "Recalling reflection in plane mirrors",
-					"QuestionLink": ""
+					"QuestionImage": "allamerican_spinach.jpeg",
+					"QuestionText": "All American Club on a Spinach Wrap",
+					"QuestionLink": {"name": "All-American Club\u2122 on a Spinach Wrap               ", "valueServingWeightGrams": 348, "valueCalories": 630, "valueTotalFat": 27, "valueSatFat": 11, "valueTransFat": 0, "valueCholesterol": 95, "valueSodium": 2320, "valueTotalCarb": 57, "valueFibers": 3.0, "valueSugars": 6, "valueProteins": 42, "valueVitaminA": 35, "valueVitaminC": 15, "valueCalcium": 15, "valueIron": 35, "Category": "SANDWICHES", "Subcategory": "Make any Sandwich into a Wrap"}
+				},
+				"Link2": {
+					"QuestionImage": "blackForestHamWrap.jpeg",
+					"QuestionText": "Black Forest Ham on Tomato Basil Wrap",
+					"QuestionLink": {"name": "Black Forest Ham on Tomato Basil Wrap               ", "valueServingWeightGrams": 307, "valueCalories": 440, "valueTotalFat": 12, "valueSatFat": 5, "valueTransFat": 0, "valueCholesterol": 55, "valueSodium": 1720, "valueTotalCarb": 57, "valueFibers": 4.0, "valueSugars": 6, "valueProteins": 29, "valueVitaminA": 30, "valueVitaminC": 25, "valueCalcium": 10, "valueIron": 25, "Category": "SANDWICHES", "Subcategory": "Make any Sandwich into a Wrap"}
+				},
+				"Link3": {
+					"QuestionImage": "BuffaloChickenWrap.jpeg",
+					"QuestionText": "Buffalo Chicken Wrap (with Grilled Chicken) on Tomato Basil Wrap",
+					"QuestionLink": {"name": "Buffalo Chicken Wrap (with Grilled Chicken) on Tomato Basil Wrap               ", "valueServingWeightGrams": 356, "valueCalories": 550, "valueTotalFat": 20, "valueSatFat": 6, "valueTransFat": 0, "valueCholesterol": 110, "valueSodium": 1950, "valueTotalCarb": 55, "valueFibers": 4.0, "valueSugars": 6, "valueProteins": 42, "valueVitaminA": 30, "valueVitaminC": 25, "valueCalcium": 10, "valueIron": 25, "Category": "SANDWICHES", "Subcategory": "Make any Sandwich into a Wrap"}
+				},
+				"Link4": {
+					"QuestionImage": "allamerican_spinach.jpeg",
+					"QuestionText": "Chicken & Bacon Ranch (with Grilled Chicken) on Spinach Wrap",
+					"QuestionLink": {"name": "Chicken & Bacon Ranch (with Grilled Chicken) on Spinach Wrap               ", "valueServingWeightGrams": 400, "valueCalories": 810, "valueTotalFat": 41, "valueSatFat": 16, "valueTransFat": 0, "valueCholesterol": 170, "valueSodium": 1830, "valueTotalCarb": 56, "valueFibers": 4.0, "valueSugars": 6, "valueProteins": 59, "valueVitaminA": 25, "valueVitaminC": 20, "valueCalcium": 30, "valueIron": 25, "Category": "SANDWICHES", "Subcategory": "Make any Sandwich into a Wrap"}
+				},
+				"Link5": {
+					"QuestionImage": "CCCombo.jpeg",
+					"QuestionText": "Cold Cut Combo on Tomato Basil Wrap",
+					"QuestionLink": {"name": "Cold Cut Combo on Tomato Basil Wrap               ", "valueServingWeightGrams": 314, "valueCalories": 530, "valueTotalFat": 24, "valueSatFat": 7, "valueTransFat": 0, "valueCholesterol": 95, "valueSodium": 1970, "valueTotalCarb": 54, "valueFibers": 3.0, "valueSugars": 5, "valueProteins": 27, "valueVitaminA": 15, "valueVitaminC": 25, "valueCalcium": 15, "valueIron": 25, "Category": "SANDWICHES", "Subcategory": "Make any Sandwich into a Wrap"}
+				},
+				"Link6": {
+					"QuestionImage": "italianBMT.jpeg",
+					"QuestionText": "Italian BMT Wrap",
+					"QuestionLink": {"name": "Italian BMT\u00ae on Tomato Basil Wrap               ", "valueServingWeightGrams": 314, "valueCalories": 680, "valueTotalFat": 37, "valueSatFat": 14, "valueTransFat": 0, "valueCholesterol": 100, "valueSodium": 2330, "valueTotalCarb": 57, "valueFibers": 4.0, "valueSugars": 5, "valueProteins": 32, "valueVitaminA": 15, "valueVitaminC": 40, "valueCalcium": 10, "valueIron": 25, "Category": "SANDWICHES", "Subcategory": "Make any Sandwich into a Wrap"}
 				},
 			}
 		}
@@ -88,78 +113,50 @@ function questionInteractive()
 		"icon": "cookies.png",
 		"subtopic": {
 			"Chocolate": {
-				"ScriptDocLink":"",	//Link to the doc about the topic
+				"ScriptDocLink":"https://www.verywellfit.com/the-best-cookies-for-weight-loss-3495635#:~:text=The%20number%20of%20calories%20in,and%202%20grams%20of%20fat.",	//Link to the doc about the topic
 
 				"Link1": {
-					"QuestionImage": "33125.png",
-					"QuestionText": "Large",
-					"QuestionLink": ""
+					"QuestionImage": "chocolatechip_cookie.jpeg",
+					"QuestionText": "Classic Chocolate Chip",
+					"QuestionLink": {"name": "Mini Hearty Multigrain Bread", "valueServingWeightGrams": 47, "valueCalories": 120, "valueTotalFat": 2, "valueSatFat": 0, "valueTransFat": 0, "valueCholesterol": 0, "valueSodium": 210, "valueTotalCarb": 24, "valueFibers": 2.0, "valueSugars": 2, "valueProteins": 5, "valueVitaminA": 0, "valueVitaminC": 0, "valueCalcium": 0, "valueIron": 6, "Category": "CONDIMENTS", "Subcategory": "Cookies"}
 				},
 				"Link2": {
-					"QuestionImage": "31789.png",
-					"QuestionText": "Identifying a concave surface",
-					"QuestionLink": ""
+					"QuestionImage": "plain_choco_cookie.jpeg",
+					"QuestionText": "Plain Chocolate Cookies",
+					"QuestionLink": {"name": "Plain Chocolate Cookies", "valueServingWeightGrams": 43, "valueCalories": 100, "valueTotalFat": 1, "valueSatFat": 0, "valueTransFat": 0, "valueCholesterol": 0, "valueSodium": 40, "valueTotalCarb": 22, "valueFibers": 0.0, "valueSugars": 30, "valueProteins": 4, "valueVitaminA": 0, "valueVitaminC": 6, "valueCalcium": 0, "valueIron": 6, "Category": "CONDIMENTS", "Subcategory": "Cookies"}
 				}
 			},
-			"Kinetic theory": {
-				"ScriptDocLink":"",	//Link to the doc about the topic
+			"Caramel": {
+				"ScriptDocLink":"https://www.verywellfit.com/the-best-cookies-for-weight-loss-3495635#:~:text=The%20number%20of%20calories%20in,and%202%20grams%20of%20fat.",	//Link to the doc about the topic
 
 				"Link1": {
-					"QuestionImage": "39577.png",
-					"QuestionText": "Relating attraction between particles with an everyday example",
-					"QuestionLink": ""
-				},
-				"Link2": {
-					"QuestionImage": "39581.png",
-					"QuestionText": "Understanding state change with an known example",
-					"QuestionLink": ""
+					"QuestionImage": "salted_caramel.jpeg",
+					"QuestionText": "Salted Caramel Cookie",
+					"QuestionLink": {"name": "Salted Caramel Cookie", "valueServingWeightGrams": 14, "valueCalories": 80, "valueTotalFat": 9, "valueSatFat": 2, "valueTransFat": 0, "valueCholesterol": 5, "valueSodium": 30, "valueTotalCarb": 0, "valueFibers": 0.0, "valueSugars": 30, "valueProteins": 4, "valueVitaminA": 0, "valueVitaminC": 0, "valueCalcium": 0, "valueIron": 0, "Category": "CONDIMENTS", "Subcategory": "Cookies"}
 				}
 			}
 		}
 	},
 	"Beverages": {
-		"icon": "beverage.png",
+		"icon": "sodas.png",
 		"subtopic": {
-			"Listening": {
-				"ScriptDocLink":"",	//Link to the doc about the topic
+			"Sodas": {
+				"ScriptDocLink":"https://www.verywellfit.com/soda-nutrition-facts-and-health-benefits-5080112",	//Link to the doc about the topic
 
 				"Link1": {
-					"QuestionImage": "TooBigTooSmall_2420.png",
-					"QuestionText": "Audio 1",
-					"QuestionLink": ""
+					"QuestionImage": "coke.jpeg",
+					"QuestionText": "Regualr Coke",
+					"QuestionLink": {"name": "Coke", "valueServingWeightGrams": 12, "valueCalories": 140, "valueTotalFat": 0, "valueSatFat": 0, "valueTransFat": 0, "valueCholesterol": 5, "valueSodium": 43.2, "valueTotalCarb": 39, "valueFibers": 0.0, "valueSugars": 0, "valueProteins": 0, "valueVitaminA": 0, "valueVitaminC": 0, "valueCalcium": 0, "valueIron": 0, "Category": "CONDIMENTS", "Subcategory": "Sodas"}
 				},
 				"Link2": {
-					"QuestionImage": "Q_Recall.png",
-					"QuestionText": "Audio 1 : Recall Question",
-					"QuestionLink": ""
-				}
-			},
-			"Reading": {
-				"ScriptDocLink":"",	//Link to the doc about the topic
-
-				"Link1": {
-					"QuestionImage": "UniversalLanguage_2296.png",
-					"QuestionText": "Humans may speak a universal language, say scientists",
-					"QuestionLink": ""
+					"QuestionImage": "orange.jpeg",
+					"QuestionText": "Orange Soda",
+					"QuestionLink": {"name": "Orange Soda", "valueServingWeightGrams": 12, "valueCalories": 140, "valueTotalFat": 0, "valueSatFat": 0, "valueTransFat": 0, "valueCholesterol": 5, "valueSodium": 43.2, "valueTotalCarb": 39, "valueFibers": 0.0, "valueSugars": 0, "valueProteins": 0, "valueVitaminA": 0, "valueVitaminC": 0, "valueCalcium": 0, "valueIron": 0, "Category": "CONDIMENTS", "Subcategory": "Sodas"}
 				},
-				"Link2": {
-					"QuestionImage": "Q_Recall.png",
-					"QuestionText": "Recall Question",
-					"QuestionLink": ""
-				}
-			},
-			"Grammar": {
-				"ScriptDocLink":"",	//Link to the doc about the topic
-
-				"Link1": {
-					"QuestionImage": "grammar_icon.png",
-					"QuestionText": "Verbs: Because Actions Matter",
-					"QuestionLink": ""
-				},
-				"Link2": {
-					"QuestionImage": "preposition.png",
-					"QuestionText": "Prepositions: All About Making Connections",
-					"QuestionLink": ""
+				"Link3": {
+					"QuestionImage": "fruitPunch.jpg",
+					"QuestionText": "Fruit Punch",
+					"QuestionLink": {"name": "Fruit Punch", "valueServingWeightGrams": 12, "valueCalories": 140, "valueTotalFat": 0, "valueSatFat": 0, "valueTransFat": 0, "valueCholesterol": 5, "valueSodium": 43.2, "valueTotalCarb": 39, "valueFibers": 0.0, "valueSugars": 0, "valueProteins": 0, "valueVitaminA": 0, "valueVitaminC": 0, "valueCalcium": 0, "valueIron": 0, "Category": "CONDIMENTS", "Subcategory": "Sodas"}
 				}
 			}
 		}

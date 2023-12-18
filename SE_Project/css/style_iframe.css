@@ -55,6 +55,10 @@ html
 	background: url("../assets/background.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 #questionIframe
@@ -70,10 +74,20 @@ html
 	width: auto;
 }
 
+
+#extrasMainDiv
+{
+	height: 108px;
+	width: 200px;
+	background: white;
+	border-radius: 15px;
+	padding: 10px;
+}
+
 #caloryCalculatorMainDiv
 {
 	height: 100%;
-	width: 100%;
+	width: 70%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -89,6 +103,8 @@ html
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
+
+	border-radius: 15px;
 }
 .drawLine
 {
@@ -124,6 +140,7 @@ html
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	display: none;
 
 	background: #9F1D21;
 	/*background: #FAFAFA;*/
